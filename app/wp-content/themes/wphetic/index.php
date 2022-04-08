@@ -10,8 +10,8 @@ $the_query = new WP_Query($args);
             <div class="cards">
                 <p class="cards-title">Les 3 dernières recettes</p>
                 <div class="cards-buttons">
-                    <button type="button" class="footer__btn"><a href="http://localhost:2345/recettes">Voir toutes les recettes</a></button>
-                    <button type="button" class="footer__btn"><a href="http://localhost:2345/create-recipe">Ajouter une recette</a></button>
+                    <button type="button" class="footer__btn"><a href="<?php 'http://'. $_SERVER['SERVER_NAME'] .'/recettes' ?>">Voir toutes les recettes</a></button>
+                    <button type="button" class="footer__btn"><a href="<?php 'http://'. $_SERVER['SERVER_NAME'] .'/create-recipe' ?>">Ajouter une recette</a></button>
                 </div>
                 <div class="cards-gallery">
                     <?php if ($the_query->have_posts()) : while ($the_query->have_posts()) : $the_query->the_post(); ?>

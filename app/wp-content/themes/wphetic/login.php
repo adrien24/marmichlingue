@@ -24,6 +24,6 @@
         <label class="form-check-label" for="Check1">Check me out</label>
     </div>
     <button type="submit" class="btn btn-primary" name="wp-submit">Se connecter</button>
-    <input type="hidden" name="redirect_to" value="http://localhost:2345/">
+    <input type="hidden" name="redirect_to" value="<?php echo 'http://'. $_SERVER['SERVER_NAME'] ?>">
 </form>
 <?php get_footer(); ?>

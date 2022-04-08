@@ -13,8 +13,8 @@ $wp_query->set('post_type', 'recipe');
         <div id="wp_content">
             <div class="cards">
                 <div class="cards-buttons">
-                    <button type="button" class="footer__btn"><a href="http://localhost:2345/recettes">Voir toutes les recettes</a></button>
-                    <button type="button" class="footer__btn"><a href="http://localhost:2345/create-recipe">Ajouter une recette</a></button>
+                    <button type="button" class="footer__btn"><a href="<?php 'http://'. $_SERVER['SERVER_NAME'] .'/recettes' ?>">Voir toutes les recettes</a></button>
+                    <button type="button" class="footer__btn"><a href="<?php 'http://'. $_SERVER['SERVER_NAME'] .'/create-recipe' ?>">Ajouter une recette</a></button>
                 </div>
                 <div class="cards-gallery">
                     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>

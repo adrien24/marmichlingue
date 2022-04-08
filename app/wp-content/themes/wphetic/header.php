@@ -17,7 +17,7 @@
                 <span></span>
                 <span></span>
             </button>
-            <a href="http://localhost:2345/">
+            <a href="<?php 'http://'. $_SERVER['SERVER_NAME'] ?>">
                 <h4>Marmichlingue</h4>
             </a>
         </div>
